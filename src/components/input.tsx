@@ -25,7 +25,7 @@ export function Input({children, variant = 'primary'}: InputProps){
 }
 
 function Field({...rest} : TextInputProps){
-  return <TextInput {...rest} className="flex-1 text-zinc-100 text-lg font-regular" placeholderTextColor={colors.zinc[400]} selectionColor={Platform.OS === 'ios' ? colors.zinc[100] : undefined}/>
+  return <TextInput {...rest} className="flex-1 text-zinc-100 text-base items-center font-regular" placeholderTextColor={colors.zinc[400]} selectionColor={Platform.OS === 'ios' ? colors.zinc[100] : undefined}/>
 }
 
 Input.Field = Field
